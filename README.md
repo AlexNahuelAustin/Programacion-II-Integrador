@@ -191,43 +191,7 @@ Main.java
 
 Punto de entrada del sistema (public static void main(String[] args)).
 
-========================================================================================
-
-Ejemplo de script SQL base
-
-CREATE DATABASE IF NOT EXISTS historia_clinica;
-USE historia_clinica;
-
-CREATE TABLE paciente (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nombre VARCHAR(50) NOT NULL,
-    apellido VARCHAR(50) NOT NULL,
-    dni VARCHAR(20) NOT NULL UNIQUE,
-    fecha_nacimiento DATE,
-    telefono VARCHAR(30),
-    email VARCHAR(80),
-    direccion VARCHAR(100),
-    grupo_sanguineo VARCHAR(5), -- Ej: 'O+', 'A-', etc.
-    eliminado BOOLEAN NOT NULL DEFAULT FALSE
-);
-
-CREATE TABLE historia_clinica (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    id_paciente INT NOT NULL,
-    fecha_alta DATE NOT NULL,
-    observaciones TEXT,
-    enfermedades_previas TEXT,
-    alergias TEXT,
-    medicamentos_habituales TEXT,
-    eliminado BOOLEAN NOT NULL DEFAULT FALSE,
-    CONSTRAINT fk_historia_paciente
-        FOREIGN KEY (id_paciente) REFERENCES paciente(id)
-);
-
-
-
-La relación entre paciente e historia_clinica es de 1 a 1, por lo que el diseño y las validaciones del sistema apuntan a mantener esa correspondencia.
-
+=======================================================================================
 
 La clase DatabaseConnection centraliza la configuración:
 private static final String URL = "jdbc:mysql://localhost:3306/historia_clinica;
