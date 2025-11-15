@@ -288,14 +288,14 @@ Opcional: impedir múltiples historias clínicas para el mismo paciente (relaci�
 
 ========================================================================================
 
-Requisitos del Sistema
-Componente	Versión recomendada
-Java JDK	24 (utilizado en el proyecto)
-MySQL	8.0 o superior
-IDE	Apache NetBeans
-Cliente SQL	DBeaver 25.2.4 / MySQL Workbench
-Sistema Operativo	Windows / Linux / macOS
-Instalación y Puesta en Marcha
+- Requisitos del Sistema
+- Componente	Versión recomendada
+- Java JDK	24 (utilizado en el proyecto)
+- MySQL	8.0 o superior
+- IDE	Apache NetBeans
+- Cliente SQL	DBeaver 25.2.4 / MySQL Workbench
+- Sistema Operativo	Windows / Linux / macOS
+- Instalación y Puesta en Marcha
 
 ========================================================================================
 
