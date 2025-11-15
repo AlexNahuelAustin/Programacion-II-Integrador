@@ -3,7 +3,7 @@ Sistema de Gestión de Pacientes e Historias Clínicas
 Trabajo Práctico Integrador – Programación II
 Descripción del Proyecto
 ========================================================================================
-<<Integrantes del Equipo>>
+Integrantes del Equipo
 
 Leonel Jesús Aballay – Comisión 17
 
