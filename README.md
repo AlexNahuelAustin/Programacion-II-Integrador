@@ -2,6 +2,16 @@
 Sistema de Gestión de Pacientes e Historias Clínicas
 Trabajo Práctico Integrador – Programación II
 Descripción del Proyecto
+========================================================================================
+<<Integrantes del Equipo>>
+
+Leonel Jesús Aballay – Comisión 17
+
+Caín Cabrera Bertolazzi – Comisión 11
+
+Alex Nahuel Austin – Comisión 17
+
+Cristian Gabriel Aguirre – Comisión 6
 
 ========================================================================================
 ### Índice
@@ -28,16 +38,6 @@ El sistema trabaja con dos entidades principales:
 Paciente: datos personales y de contacto del paciente.
 
 Historia Clínica: información médica asociada a un paciente (1:1), como antecedentes, alergias, observaciones, etc.
-========================================================================================
-Integrantes del Equipo
-
-Leonel Jesús Aballay – Comisión 17
-
-Caín Cabrera Bertolazzi – Comisión 11
-
-Alex Nahuel Austin – Comisión 17
-
-Cristian Gabriel Aguirre – Comisión 6
 ========================================================================================
 Tecnologías Utilizadas
 Componente	Versión / Descripción
