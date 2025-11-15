@@ -476,35 +476,6 @@ Se asegura de no dejar la base de datos en un estado inconsistente respecto al p
 
 0. Salir
 
-========================================================================================
-
-Finaliza la ejecución del sistema y cierra el programa de consola.
-Arquitectura del Sistema
-Diagrama en Capas (Vista Lógica)
-
-┌───────────────────────────────────────────┐
-│           Capa de Presentación           │
-│         (Main / Menú de Consola)         │
-│   Main, AppMenu, opciones de interacción │
-└───────────────────▲───────────────────────┘
-                    │
-┌───────────────────┴───────────────────────┐
-│           Capa de Servicio                │
-│    PacienteServiceImpl, HistorialService  │
-│  Validaciones, reglas de negocio,        │
-│  manejo de transacciones                 │
-└───────────────────▲───────────────────────┘
-                    │
-┌───────────────────┴───────────────────────┐
-│           Capa de DAO (Persistencia)      │
-│  PacienteDaoImpl, HistoriaClinicaDaoImpl  │
-│  JDBC, PreparedStatement, ResultSet       │
-└───────────────────▲───────────────────────┘
-                    │
-┌───────────────────┴───────────────────────┐
-│           Capa de Modelo (Entidades)      │
-│  Paciente, HistoriaClinica, GrupoSanguineo│
-└───────────────────────────────────────────┘
 
 ========================================================================================
 
@@ -575,11 +546,9 @@ Simular un escenario real de gestión de información médica (pacientes e histo
 
 ========================================================================================
 
-Versión del Proyecto: 1.0
-Lenguaje: Java 24
-Base de Datos: MySQL 8.x
-IDE: Apache NetBeans
-Clientes SQL: DBeaver 25.2.4, MySQL Workbench
+- Versión del Proyecto: 1.0
+- Lenguaje: Java 24
+- Base de Datos: MySQL 8.x
+- IDE: Apache NetBeans
+- Clientes SQL: DBeaver 25.2.4, MySQL Workbench
 
-
-Proyecto educativo desarrollado como Trabajo Práctico Integrador de Programación II
