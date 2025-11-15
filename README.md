@@ -1,8 +1,8 @@
-Programacion II Trabajo Integrador
+- Programacion II Trabajo Integrador
 
-Sistema de Gestion de Pacientes e Historias Clinicas
+- Sistema de Gestion de Pacientes e Historias Clinicas
 
-Descripcion del Proyecto
+- Descripcion del Proyecto
 
 ========================================================================================
 Integrantes del Equipo
@@ -42,15 +42,16 @@ Paciente: datos personales y de contacto del paciente.
 Historia Clínica: información médica asociada a un paciente (1:1), como antecedentes, alergias, observaciones, etc.
 
 ========================================================================================
-Tecnologías Utilizadas
-Componente	Versión / Descripción
-Lenguaje	Java SE 24
-JDK	JDK 24
-IDE	Apache NetBeans (entorno de desarrollo)
-Base de Datos	MySQL 8.x (motor InnoDB)
-Cliente SQL 1	DBeaver 25.2.4
-Cliente SQL 2	MySQL Workbench (para consultas y diseño)
-Conector JDBC	mysql-connector-j-[versión].jar
+
+-Tecnologías Utilizadas
+-Componente	Versión / Descripción
+-Lenguaje	Java SE 24
+-JDK	JDK 24
+-IDE	Apache NetBeans (entorno de desarrollo)
+-Base de Datos	MySQL 8.x (motor InnoDB)
+-Cliente SQL 1	DBeaver 25.2.4
+-Cliente SQL 2	MySQL Workbench (para consultas y diseño)
+-Conector JDBC	mysql-connector-j-[versión].jar
 
 ========================================================================================
 
