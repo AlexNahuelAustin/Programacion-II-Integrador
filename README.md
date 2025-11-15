@@ -1,6 +1,7 @@
 Programacion II Trabajo Integrador
 Sistema de Gestion de Pacientes e Historias Clinicas
 Descripcion del Proyecto
+
 ========================================================================================
 Integrantes del Equipo
 
