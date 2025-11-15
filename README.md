@@ -1,7 +1,6 @@
-# Programacion-II-Integrador
-Sistema de Gestión de Pacientes e Historias Clínicas
-Trabajo Práctico Integrador – Programación II
-Descripción del Proyecto
+Programacion II Trabajo Integrador
+Sistema de Gestion de Pacientes e Historias Clinicas
+Descripcion del Proyecto
 ========================================================================================
 Integrantes del Equipo
 
