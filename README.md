@@ -1,5 +1,7 @@
 Programacion II Trabajo Integrador
+
 Sistema de Gestion de Pacientes e Historias Clinicas
+
 Descripcion del Proyecto
 
 ========================================================================================
@@ -38,6 +40,7 @@ El sistema trabaja con dos entidades principales:
 Paciente: datos personales y de contacto del paciente.
 
 Historia Clínica: información médica asociada a un paciente (1:1), como antecedentes, alergias, observaciones, etc.
+
 ========================================================================================
 Tecnologías Utilizadas
 Componente	Versión / Descripción
@@ -48,7 +51,9 @@ Base de Datos	MySQL 8.x (motor InnoDB)
 Cliente SQL 1	DBeaver 25.2.4
 Cliente SQL 2	MySQL Workbench (para consultas y diseño)
 Conector JDBC	mysql-connector-j-[versión].jar
+
 ========================================================================================
+
 El archivo mysql-connector-j-[versión].jar debe estar agregado a las Libraries del proyecto en NetBeans para que Java pueda conectarse correctamente a MySQL.
 
 Objetivos Académicos
@@ -239,7 +244,6 @@ Requisitos para la conexión
 
 
 
-
 ========================================================================================
 
 
@@ -280,7 +284,9 @@ No permitir duplicar el DNI de un paciente.
 No permitir crear una historia clínica para un paciente inexistente.
 
 Opcional: impedir múltiples historias clínicas para el mismo paciente (relación 1:1).
+
 ========================================================================================
+
 Requisitos del Sistema
 Componente	Versión recomendada
 Java JDK	24 (utilizado en el proyecto)
@@ -289,7 +295,9 @@ IDE	Apache NetBeans
 Cliente SQL	DBeaver 25.2.4 / MySQL Workbench
 Sistema Operativo	Windows / Linux / macOS
 Instalación y Puesta en Marcha
+
 ========================================================================================
+
 1. Crear la Base de Datos
 
 Ejecutar el script SQL (o el script completo del proyecto) en MySQL utilizando:
@@ -349,7 +357,9 @@ Compilar y ejecutar el proyecto indicando el classpath con el conector de MySQL.
 
 javac -cp ".;ruta\mysql-connector-j-[versión].jar" app\Main.java
 java  -cp ".;ruta\mysql-connector-j-[versión].jar" app.Main
+
 ========================================================================================
+
 Uso del Sistema (Menú de Consola)
 
 ========= MENU =========
@@ -365,11 +375,13 @@ Uso del Sistema (Menú de Consola)
 9. Actualizar Historial
 10. Eliminar Historial
 0. Salir
+
 ========================================================================================
+
 Opciones habituales
 Gestión de Pacientes
 
-1. Crear paciente con Historial
+3. Crear paciente con Historial
 
 Solicita los datos básicos del paciente: nombre, apellido, DNI, fecha de nacimiento, teléfono, email, dirección, grupo sanguíneo, etc.
 
@@ -468,6 +480,7 @@ Se asegura de no dejar la base de datos en un estado inconsistente respecto al p
 Finaliza la ejecución del sistema y cierra el programa de consola.
 Arquitectura del Sistema
 Diagrama en Capas (Vista Lógica)
+
 ┌───────────────────────────────────────────┐
 │           Capa de Presentación           │
 │         (Main / Menú de Consola)         │
@@ -491,7 +504,9 @@ Diagrama en Capas (Vista Lógica)
 │           Capa de Modelo (Entidades)      │
 │  Paciente, HistoriaClinica, GrupoSanguineo│
 └───────────────────────────────────────────┘
+
 ========================================================================================
+
 Componentes Clave
 
 config.DatabaseConnection:
@@ -542,7 +557,9 @@ Causa: la base de datos o las tablas no están creadas.
 Solución: ejecutar el script SQL de creación de BD y tablas antes de correr el proyecto.
 
 Contexto Académico
+
 ========================================================================================
+
 Carrera: Tecnicatura Universitaria en Programación
 
 Materia: Programación II
@@ -554,7 +571,9 @@ Objetivo General:
 Implementar un sistema completo con arquitectura en capas, persistencia en base de datos y aplicación de POO.
 
 Simular un escenario real de gestión de información médica (pacientes e historias clínicas).
+
 ========================================================================================
+
 Versión del Proyecto: 1.0
 Lenguaje: Java 24
 Base de Datos: MySQL 8.x
