@@ -75,9 +75,9 @@ Ejemplo de uso mas comunes:
      * Muestra todos los pacientes que hay en el sistema.
      * Muestra los datos del paciente.
        
-  3.Listar paciente por ID
-     * Buscás un paciente específico por su número de ID.
-     * En caso que exista, te avisa.
+  3.Listar paciente por ID.
+    * Buscás un paciente específico por su número de ID.
+    * En caso que exista, te avisa.
      
   4. Actualizar Paciente
      * Modificás los datos de un paciente que ya existe.
