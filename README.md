@@ -14,7 +14,7 @@ Integrantes del Equipo
 
 ObJetivos
 1. Orgamizar el codigo por capas.
-   * Las separamos en 4 partes para que mas ordenado.
+   * Capa de Presentación: gestión de menús y entrada de datos por consola.
    * Una contiene las reglas de negocio.
    * Una parte se encarga de mostrar menús y recibir datos a travez de la consola
    * Y la última son las clases que representan pacientes y historiales.
@@ -49,6 +49,39 @@ Tecnologia Utilizada:
   - Driver MySQL Connector - versión 8.4.0
 -------
 Configurar Base de Datos
+SCRIP
+
+create database historial_clinico;
+-- Tabla principal: HISTORIA_CLINICA
+CREATE TABLE historia_clinica (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    eliminado BOOLEAN NOT NULL DEFAULT FALSE,
+    nro_historia VARCHAR(20) UNIQUE,
+    grupo_sanguineo ENUM('A+','A-','B+','B-','AB+','AB-','O+','O-'),
+    antecedentes TEXT,
+    medicacion_actual TEXT,
+    observaciones TEXT,
+    CONSTRAINT chk_nro_historia_len CHECK (CHAR_LENGTH(nro_historia) <= 20)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Tabla PACIENTE
+CREATE TABLE paciente (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    eliminado BOOLEAN NOT NULL DEFAULT FALSE,
+    nombre VARCHAR(80) NOT NULL,
+    apellido VARCHAR(80) NOT NULL,
+    dni VARCHAR(15) NOT NULL UNIQUE,
+    fecha_nacimiento DATE,
+    historia_clinica_id BIGINT UNIQUE,
+    CONSTRAINT chk_nombre_len CHECK (CHAR_LENGTH(nombre) <= 80),
+    CONSTRAINT chk_apellido_len CHECK (CHAR_LENGTH(apellido) <= 80),
+    CONSTRAINT chk_dni_len CHECK (CHAR_LENGTH(dni) <= 15),
+    CONSTRAINT fk_paciente_historia FOREIGN KEY (historia_clinica_id)
+      REFERENCES historia_clinica(id)
+      ON DELETE RESTRICT
+      ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 
 -----
 
