@@ -52,8 +52,9 @@ Configurar Base de Datos
 SCRIP
 
 create database historial_clinico;
-* Tabla principal: HISTORIA_CLINICA
-CREATE TABLE historia_clinica (
+* Tabla principal:
+ - HISTORIA_CLINICA
+    CREATE TABLE historia_clinica (
     id BIGINT PRIMARY KEY AUTO_INCREMENT,
     eliminado BOOLEAN NOT NULL DEFAULT FALSE,
     nro_historia VARCHAR(20) UNIQUE,
@@ -61,10 +62,9 @@ CREATE TABLE historia_clinica (
     antecedentes TEXT,
     medicacion_actual TEXT,
     observaciones TEXT,
-    CONSTRAINT chk_nro_historia_len CHECK (CHAR_LENGTH(nro_historia) <= 20)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+    CONSTRAINT chk_nro_historia_len CHECK (CHAR_LENGTH(nro_historia) <= 20)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-* Tabla PACIENTE
+- Tabla PACIENTE
     CREATE TABLE paciente (
       id BIGINT PRIMARY KEY AUTO_INCREMENT,
       eliminado BOOLEAN NOT NULL DEFAULT FALSE,
@@ -80,7 +80,6 @@ CREATE TABLE historia_clinica (
       REFERENCES historia_clinica(id)
       ON DELETE RESTRICT
       ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
 
 -----
 
