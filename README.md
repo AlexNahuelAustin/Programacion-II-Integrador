@@ -1,9 +1,7 @@
 - Programacion II Trabajo Integrador
-
 - Sistema de Gestión de Historias Clínicas
-
 - Descripcion del Proyecto: Sistema desarrollado para la materia Programación II que permite gestionar pacientes y sus historias clínicas mediante una aplicación de consola en Java.
-
+------
 
 Grupo: 50
 Integrantes del Equipo
@@ -12,7 +10,7 @@ Integrantes del Equipo
 * Alex Nahuel Austin – Comisión 17
 * Cristian Gabriel Aguirre – Comisión 6
 *Link del video:-------
-
+-----
 
 ObJetivos
 1. Orgamizar el codigo por capas.
@@ -42,12 +40,61 @@ ObJetivos
   * Validamos que los campos obligatorios no estén vacíos.
   * Respetamos las relaciones entre tablas con claves foráneas.
   * Implementamos eliminaciones seguras para no dejar datos huérfanos.
+------
 
-
-Requisitos para que funcione el programa necesitás:
+Tecnologia Utilizada:
   - Java - versión 24
-  - MySQL - versión 8.0 o superior
+  - MySQL - versión 8.x
   - Apache NetBeans - versión 25
   - Driver MySQL Connector - versión 8.4.0
+-------
+Configurar Base de Datos
+
+-----
+
+Uso del Sistema
+1. Crear paciente con Historial.
+2. Listar pacientes.
+3. Listar paciente por Id.
+4. Actualizar Paciente.
+5. Eliminar Paciente por ID.
+6. Crear Historial.
+7. Listar Historial.
+8. Leer Historial por ID.
+9. Actualizar Historial.
+10. Eliminar Historial.
+0. Salir.
+   
+Ejemplo de uso mas comunes:
+  1. Crear paciente con Historial.
+     * Te pide los datos del paciente.
+     * Verifica que no exista otro paciente con el mismo DNI.
+     * Si algo sale mal no se guardan los cambios.
+       
+  2. Listar pacientes.
+     * Muestra todos los pacientes que hay en el sistema.
+     * Muestra los datos del paciente.
+       
+  3.Listar paciente por ID
+     * Buscás un paciente específico por su número de ID.
+     * En caso que exista, te avisa.
+     
+  4. Actualizar Paciente
+     * Modificás los datos de un paciente que ya existe.
+       
+  5. Crear Historial
+     * Creás una historia clínica para un paciente que ya existe.
+     * Tenés que poner el ID del paciente
+     * Cargás observaciones, antecedentes, medicamentos, etc.
+
+  7. Listar Historial
+     * Mostramos todos los historiales médicos que hay en la base de datos.
+     
+  9. Leer Historial por ID
+      * Buscás un historial específico por su número de ID.
+      * Te muestra todos los detalles de ese historial médico  
+-------
+
+
 
    
