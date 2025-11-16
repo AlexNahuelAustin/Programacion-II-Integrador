@@ -9,7 +9,7 @@ Integrantes del Equipo
 * Caín Cabrera Bertolazzi – Comisión 11
 * Alex Nahuel Austin – Comisión 17
 * Cristian Gabriel Aguirre – Comisión 6
-*Link del video:-------
+* Link del video:-------
 -----
 
 ObJetivos
@@ -76,8 +76,8 @@ Ejemplo de uso mas comunes:
      * Muestra los datos del paciente.
        
   3.Listar paciente por ID
-    * Buscás un paciente específico por su número de ID.
-    * En caso que exista, te avisa.
+     * Buscás un paciente específico por su número de ID.
+     * En caso que exista, te avisa.
      
   4. Actualizar Paciente
      * Modificás los datos de un paciente que ya existe.
