@@ -145,7 +145,7 @@ Ejemplo de uso mas comunes:
   7. Listar Historial
      * Mostramos todos los historiales médicos que hay en la base de datos.
      
-  9. Leer Historial por ID
+  8. Leer Historial por ID
       * Buscás un historial específico por su número de ID.
       * Te muestra todos los detalles de ese historial médico  
 -------
