@@ -13,7 +13,7 @@ Integrantes del Equipo
 -----
 
 ObJetivos
-1. Orgamizar el codigo por capas.
+1. Organizar el codigo por capas.
    * Capa de Presentación: gestión de menús y entrada de datos por consola.
    * Una contiene las reglas de negocio.
    * Una parte se encarga de mostrar menús y recibir datos a travez de la consola
@@ -47,6 +47,9 @@ Tecnologia Utilizada:
   - MySQL - versión 8.x
   - Apache NetBeans - versión 25
   - Driver MySQL Connector - versión 8.4.0
+  - HikariCP-6.2.1.jar
+  - slf4-api-1.7.36.jar
+  - slf4-simple-1.7.36.jar
 -------
 Configurar Base de Datos
 SCRIP
