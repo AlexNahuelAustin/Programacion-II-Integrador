@@ -57,7 +57,7 @@ SCRIP
 create database historial_clinico;
 * Tabla principal:
 
-    CREATE TABLE historia_clinica (
+      CREATE TABLE historia_clinica (
 
       id BIGINT PRIMARY KEY AUTO_INCREMENT, 
  
@@ -79,7 +79,7 @@ create database historial_clinico;
 
 * Tabla PACIENTE
   
-    CREATE TABLE paciente (
+      CREATE TABLE paciente (
   
       id BIGINT PRIMARY KEY AUTO_INCREMENT,
   
