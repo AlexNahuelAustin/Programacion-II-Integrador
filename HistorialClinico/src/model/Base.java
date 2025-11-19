@@ -8,18 +8,21 @@ package model;
  * Cain Cabrera Bertilazzi-Comision 11
  * Leonel Jesus Aballay-Comision 17
  */
-public abstract class Base {
+public abstract class Base { 
+    //Declaramos atributos de la clase abstracta.
     private boolean eliminado;
-    int id;
-
-    public Base(boolean eliminado, int id) {
+    private int id;
+    
+    //Se crea constructor con parametros y vacio.
+    public Base(boolean eliminado, int id) { 
         this.eliminado = eliminado;
         this.id = id;
     }
 
     public Base() {
     }
-
+    
+    //Getters y Setters
     public boolean isEliminado() {
         return eliminado;
     }

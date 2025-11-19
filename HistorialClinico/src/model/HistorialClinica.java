@@ -9,12 +9,14 @@ package model;
  * Leonel Jesus Aballay-Comision 17
  */
 public class HistorialClinica extends Base {
+    //Declaramos atributos de la clase.
     private String numeroHistoria;
     private GrupoSanguineo grupoSanguineo;
     private String antecedentes;
     private String medicacionActual;
     private String observaciones;
-
+    
+    //Declaramos Constructores, unb via parametros y otro vacio.
     public HistorialClinica(String numeroHistoria, GrupoSanguineo grupoSanguineo, String antecedentes, String medicacionActual, String observaciones, int id) {
         super(false, id);
         this.numeroHistoria = numeroHistoria;
@@ -27,7 +29,8 @@ public class HistorialClinica extends Base {
     public HistorialClinica() {
         super();
     }
-
+    
+    //Getters y Setters
     public String getNumeroHistoria() {
         return numeroHistoria;
     }
@@ -67,7 +70,7 @@ public class HistorialClinica extends Base {
     @Override
     public String toString() {
         return "HistorialClinica:\n" +
-           "  id=" + id + "\n" +
+           "  id=" + getId() + "\n" +
            "  numeroHistoria=" + numeroHistoria + "\n" +
            "  grupoSanguineo=" + grupoSanguineo + "\n" +
            "  antecedentes=" + antecedentes + "\n" +

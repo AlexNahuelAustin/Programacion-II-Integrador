@@ -8,6 +8,8 @@ package model;
  * Cain Cabrera Bertilazzi-Comision 11
  * Leonel Jesus Aballay-Comision 17
  */
+
+
 public enum GrupoSanguineo {
     A_POSITIVO("A", "+"),
     A_NEGATIVO("A", "-"),

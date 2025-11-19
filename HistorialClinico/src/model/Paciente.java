@@ -7,7 +7,7 @@ import java.time.LocalDate;
  -Alumnos: 
  * Alex Nahuel Austin-Comision 17
  * Cristian Gabriel Aguirre-Comision 6
- * Cain Cabrera Bertilazzi-Comision 11
+ * Cain Cabrera Bertolazzi-Comision 11
  * Leonel Jesus Aballay-Comision 17
  */
 public class Paciente extends Base {
@@ -74,7 +74,7 @@ public class Paciente extends Base {
     @Override
     public String toString() {
         return "Paciente: \n"
-                + "  id=" + id + "\n"
+                + "  id=" + getId() + "\n"
                 + "  nombre= " + nombre + "\n"
                 + "  apellido= " + apellido + "\n"
                 + "  dni= " + dni + "\n"
