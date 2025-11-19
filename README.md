@@ -42,6 +42,7 @@ ObJetivos
   * Implementamos eliminaciones seguras para no dejar datos huérfanos.
 ------
 
+Estructura del Programa
     src/
       ├──  config/         # DatabaseConnection, TransaccionesUtils
       ├── model/           # Base, GrupoSanguineo, HistorialClinica, Paciente
