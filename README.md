@@ -43,6 +43,7 @@ ObJetivos
 ------
 
 Estructura del Programa
+
     src/
       ├──  config/         # DatabaseConnection, TransaccionesUtils
       ├── model/           # Base, GrupoSanguineo, HistorialClinica, Paciente
