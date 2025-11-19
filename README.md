@@ -42,6 +42,14 @@ ObJetivos
   * Implementamos eliminaciones seguras para no dejar datos huérfanos.
 ------
 
+src/
+├── config/          # DatabaseConnection, TransaccionesUtils
+├── model/           # Base, GrupoSanguineo, HistorialClinica, Paciente
+├── dao/             # GenericDao, HistorialDAO, PacienteDAO
+├── service/         # GenericService, HistorialSerivelmpl, PacienteServicelmpl
+└── main/            # Main, AppMenu
+------
+
 Tecnologia Utilizada:
   - Java - versión 24
   - MySQL - versión 8.x
@@ -51,10 +59,16 @@ Tecnologia Utilizada:
   - slf4-api-1.7.36.jar
   - slf4-simple-1.7.36.jar
 -------
-Configurar Base de Datos
-SCRIP
+
+Configurar Conexión
+*  URL = "jdbc:mysql://localhost:3306/historial_clinico" (En caso de usar otro puerto, mofiquelo);
+* USER = "root" (Si tiene otro nombre de usuario cambielo);
+ *  PASSWORD = ""(Use su contraseña de MySQL);
+
+------
 
       create database historial_clinico;
+      
 * Tabla principal:
 
       CREATE TABLE historia_clinica (
@@ -121,6 +135,8 @@ Ejemplo de uso mas comunes:
       * Te muestra todos los detalles de ese historial médico  
 -------
 
+Proyecto de historial clinico.
+Version 1.0.0
 
 
    
