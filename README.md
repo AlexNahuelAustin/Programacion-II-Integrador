@@ -94,11 +94,10 @@ Uso del Sistema
 3. Listar paciente por Id.
 4. Actualizar Paciente.
 5. Eliminar Paciente por ID.
-6. Crear Historial.
-7. Listar Historial.
-8. Leer Historial por ID.
-9. Actualizar Historial.
-10. Eliminar Historial.
+6. Listar Historial.
+7. Leer Historial por ID.
+8. Actualizar Historial.
+9. Eliminar Historial.
 0. Salir.
    
 Ejemplo de uso mas comunes:
@@ -111,18 +110,13 @@ Ejemplo de uso mas comunes:
      * Muestra todos los pacientes que hay en el sistema.
      * Muestra los datos del paciente.
        
-  4. Actualizar Paciente
+  3. Actualizar Paciente
      * Modificás los datos de un paciente que ya existe.
        
-  5. Crear Historial
-     * Creás una historia clínica para un paciente que ya existe.
-     * Tenés que poner el ID del paciente
-     * Cargás observaciones, antecedentes, medicamentos, etc.
-
-  7. Listar Historial
+  4. Listar Historial
      * Mostramos todos los historiales médicos que hay en la base de datos.
      
-  8. Leer Historial por ID
+  5. Leer Historial por ID
       * Buscás un historial específico por su número de ID.
       * Te muestra todos los detalles de ese historial médico  
 -------
