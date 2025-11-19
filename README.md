@@ -42,12 +42,13 @@ ObJetivos
   * Implementamos eliminaciones seguras para no dejar datos huérfanos.
 ------
 
-src/
-├── config/          # DatabaseConnection, TransaccionesUtils
-├── model/           # Base, GrupoSanguineo, HistorialClinica, Paciente
-├── dao/             # GenericDao, HistorialDAO, PacienteDAO
-├── service/         # GenericService, HistorialSerivelmpl, PacienteServicelmpl
-└── main/            # Main, AppMenu
+    src/
+      ├──  config/         # DatabaseConnection, TransaccionesUtils
+      ├── model/           # Base, GrupoSanguineo, HistorialClinica, Paciente
+      ├── dao/             # GenericDao, HistorialDAO, PacienteDAO
+      ├── service/         # GenericService, HistorialSerivelmpl, PacienteServicelmpl
+      └── main/            # Main, AppMenu
+    
 ------
 
 Tecnologia Utilizada:
@@ -61,9 +62,9 @@ Tecnologia Utilizada:
 -------
 
 Configurar Conexión
-*  URL = "jdbc:mysql://localhost:3306/historial_clinico" (En caso de usar otro puerto, mofiquelo);
-* USER = "root" (Si tiene otro nombre de usuario cambielo);
- *  PASSWORD = ""(Use su contraseña de MySQL);
+*   URL = "jdbc:mysql://localhost:3306/historial_clinico" (En caso de usar otro puerto, mofiquelo);
+*   USER = "root" (Si tiene otro nombre de usuario cambielo);
+*   PASSWORD = ""(Use su contraseña de MySQL);
 
 ------
 
@@ -136,7 +137,7 @@ Ejemplo de uso mas comunes:
 -------
 
 Proyecto de historial clinico.
-Version 1.0.0
+Versión 1.0.0
 
 
    
