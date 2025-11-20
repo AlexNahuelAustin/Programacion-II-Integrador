@@ -1,22 +1,23 @@
 package model;
 
 /**
- -Grupo: 50
- -Alumnos: 
- * Alex Nahuel Austin-Comision 17
- * Cristian Gabriel Aguirre-Comision 6
- * Cain Cabrera Bertilazzi-Comision 11
- * Leonel Jesus Aballay-Comision 17
+ * -Grupo: 50 -Alumnos:
+ *
+ * @author Alex Nahuel Austin-Comision 17
+ * @author Cristian Gabriel Aguirre-Comision 6
+ * @author Cain Cabrera Bertilazzi-Comision 11
+ * @author Leonel Jesus Aballay-Comision 17
  */
 public class HistorialClinica extends Base {
+
     //Declaramos atributos de la clase.
     private String numeroHistoria;
     private GrupoSanguineo grupoSanguineo;
     private String antecedentes;
     private String medicacionActual;
     private String observaciones;
-    
-    //Declaramos Constructores, unb via parametros y otro vacio.
+
+    //Declaramos Constructores, una para parametros y otro vacio.
     public HistorialClinica(String numeroHistoria, GrupoSanguineo grupoSanguineo, String antecedentes, String medicacionActual, String observaciones, int id) {
         super(false, id);
         this.numeroHistoria = numeroHistoria;
@@ -29,7 +30,7 @@ public class HistorialClinica extends Base {
     public HistorialClinica() {
         super();
     }
-    
+
     //Getters y Setters
     public String getNumeroHistoria() {
         return numeroHistoria;
@@ -69,14 +70,13 @@ public class HistorialClinica extends Base {
 
     @Override
     public String toString() {
-        return "HistorialClinica:\n" +
-           "  id=" + getId() + "\n" +
-           "  numeroHistoria=" + numeroHistoria + "\n" +
-           "  grupoSanguineo=" + grupoSanguineo + "\n" +
-           "  antecedentes=" + antecedentes + "\n" +
-           "  medicacionActual=" + medicacionActual + "\n" +
-           "  observaciones=" + observaciones;
-}
-    
-    
+        return "HistorialClinica:\n"
+                + "  id=" + getId() + "\n"
+                + "  numeroHistoria=" + numeroHistoria + "\n"
+                + "  grupoSanguineo=" + grupoSanguineo + "\n"
+                + "  antecedentes=" + antecedentes + "\n"
+                + "  medicacionActual=" + medicacionActual + "\n"
+                + "  observaciones=" + observaciones;
+    }
+
 }
