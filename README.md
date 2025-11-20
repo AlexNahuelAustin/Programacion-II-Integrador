@@ -9,7 +9,8 @@ Integrantes del Equipo
 * Caín Cabrera Bertolazzi – Comisión 11
 * Alex Nahuel Austin – Comisión 17
 * Cristian Gabriel Aguirre – Comisión 6
-* Link del video:-------
+* Link del video: https://www.youtube.com/watch?v=dFx2qSNR4LE
+
 -----
 
 ObJetivos
@@ -59,8 +60,6 @@ Tecnologia Utilizada:
   - Apache NetBeans - versión 25
   - Driver MySQL Connector - versión 8.4.0
   - HikariCP-6.2.1.jar
-  - slf4-api-1.7.36.jar
-  - slf4-simple-1.7.36.jar
 -------
 
 Configurar Conexión
